@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Henriette — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Henriette</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about-us.html" class="active">About Us</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h2>Welcome to my portfolio</h2>
+      <p>Hi, I am Henriette — a software developer focused on frontend & backend. Explore my projects and learn more about me.</p>
+      <div class="hero-actions">
+        <a class="btn" href="about-us.html">About Us</a>
+        <a class="btn ghost" href="#projects">My Projects</a>
+      </div>
+    </section>
+
+    <section id="projects" class="container cards">
+      <article class="card">
+        <h3>Project: Figma Portfolio</h3>
+        <p>A responsive portfolio based on your Figma design.</p>
+        <a class="small-link" href="about-us.html">View prototype & about</a>
+      </article>
+
+      <article class="card">
+        <h3>Contact</h3>
+        <p>Want to work together? Send me a message.</p>
+        <a class="small-link" href="#contact">Get in touch</a>
+      </article>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Send contact form logic here');">
+        <label>
+          Name
+          <input required type="text" name="name" />
+        </label>
+        <label>
+          Email
+          <input required type="email" name="email" />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Henriette. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
